@@ -1,8 +1,8 @@
 package _Self.buildTypes
 
-import ExampleProject
 import jetbrains.buildServer.configs.kotlin.v2019_2.project
 import jetbrains.buildServer.configs.kotlin.v2019_2.version
+import settings.ExampleProject
 
 version = "2019.2"
 
