@@ -9,7 +9,7 @@ object ExampleConfiguration : BuildType({
     id("exampleconfig")
     name = "Example Configuration"
     vcs {
-        root(rootId = RelativeId("ExampleRepository_HttpsGithubComTombuildsstuffExampleRepositoryGitRefsHeadsMaster"))
+        root(ExampleRepository)
         cleanCheckout = true
     }
 

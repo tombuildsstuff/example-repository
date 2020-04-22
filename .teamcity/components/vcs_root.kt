@@ -1,7 +1,8 @@
+import jetbrains.buildServer.configs.kotlin.v2019_2.RelativeId
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
-/*
 object ExampleRepository : GitVcsRoot({
+    id = RelativeId("ExampleRepository_HttpsGithubComTombuildsstuffExampleRepositoryGitRefsHeadsMaster")
     name = "example-repository"
     url = "https://github.com/tombuildsstuff/example-repository.git"
     agentCleanPolicy = AgentCleanPolicy.ALWAYS
@@ -10,4 +11,3 @@ object ExampleRepository : GitVcsRoot({
     branch = "refs/heads/master"
     authMethod = anonymous()
 })
-*/
