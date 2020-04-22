@@ -7,7 +7,7 @@ object ExampleConfiguration : BuildType({
     name = "Example Configuration"
     vcs {
         root(ExampleRepository)
-        cleanCheckout = true
+        cleanCheckout = false
     }
 
     steps {

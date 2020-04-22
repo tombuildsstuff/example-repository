@@ -4,7 +4,7 @@ import ExampleProject
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
-class ProjectTests {
+class VcsTests {
     @Test
     fun buildsHaveCleanCheckOut() {
         val project = ExampleProject
