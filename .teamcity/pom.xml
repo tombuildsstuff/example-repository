@@ -38,7 +38,7 @@
 
   <build>
     <testSourceDirectory>tests</testSourceDirectory>
-    <sourceDirectory>settings</sourceDirectory>
+    <sourceDirectory>${basedir}</sourceDirectory>
     <plugins>
       <plugin>
         <artifactId>kotlin-maven-plugin</artifactId>
