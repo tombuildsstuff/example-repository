@@ -5,3 +5,6 @@ tools:
 
 test:
 	mvn test
+
+validate:
+    mvn teamcity-configs:generate

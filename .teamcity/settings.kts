@@ -1,14 +1,13 @@
-package _Self.buildTypes
-
-import jetbrains.buildServer.configs.kotlin.v2019_2.BuildType
-import jetbrains.buildServer.configs.kotlin.v2019_2.project
-import jetbrains.buildServer.configs.kotlin.v2019_2.version
-//import settings.ExampleProject
+import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
 version = "2019.2"
 
-//project(ExampleProject)
+object PetclinicVcs : GitVcsRoot({
+    name = "PetclinicVcs"
+    url = "https://github.com/spring-projects/spring-petclinic.git"
+})
 
-BuildType {
-    name = "Hello"
+project {
+    vcsRoot(PetclinicVcs)
 }

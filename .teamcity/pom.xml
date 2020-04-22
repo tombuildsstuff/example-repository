@@ -37,7 +37,6 @@
   </pluginRepositories>
 
   <build>
-    <testSourceDirectory>tests</testSourceDirectory>
     <sourceDirectory>${basedir}</sourceDirectory>
     <plugins>
       <plugin>
