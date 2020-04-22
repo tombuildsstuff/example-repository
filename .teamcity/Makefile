@@ -3,8 +3,8 @@ default: tools
 tools:
 	mvn -U dependency:sources
 
-test:
+test: validate
 	mvn test
 
 validate:
-    mvn teamcity-configs:generate
+	mvn teamcity-configs:generate
